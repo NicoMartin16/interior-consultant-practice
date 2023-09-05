@@ -1,0 +1,236 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #FFFFFF;
+}
+
+body {
+  background-color: #181719;
+}
+
+.container {
+  display: block;
+  width: 90%;
+  margin: 40px auto;
+}
+
+.container .navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.container .navbar .container_logo {
+  border: 1px solid #FFFFFF;
+  padding: 10px;
+}
+
+.container .navbar .container_logo p {
+  font-size: 16px;
+  font-family: 'Lora', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.container .navbar .container_nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .navbar .container_burger_menu {
+  width: 32px;
+  display: none;
+}
+
+.container .navbar .container_burger_menu .line {
+  width: 100%;
+  height: 3px;
+  background-color: #FFFFFF;
+}
+
+.container .navbar .container_nav .active::after  {
+  content: "";
+  display: block;
+  width: 99%;
+  background-color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
+
+.container .main_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10%;
+  margin-top: 5%;
+}
+
+.container .main_container .info_container {
+  width: 50%;
+}
+
+.container .main_container .info_container .title_info {
+  font-size: 48px;
+  font-family: 'Lora', sans-serif;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.container .main_container .info_container p {
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.container .main_container .info_container .link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 40px 0;
+}
+
+.container .main_container .container_img {
+  width: 70%;
+}
+
+.container .main_container .container_img img{
+  width: 100%;
+}
+
+.container .aside_container {
+  width: 410px;
+  position: absolute;
+  right: 8%;
+  bottom: 10%;
+  background-color: #181719;
+}
+
+.container .aside_container p {
+  font-family: 'Lora', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.container .aside_container .header_card {
+  /* width: 100%; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 40px;
+  box-shadow: 1px 5px 5px black;
+}
+
+.container .aside_container .header_card .container_img {
+  width: 20%;
+}
+
+.container .aside_container .header_card .container_img img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.container .aside_container .header_card .container_info_designer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container .aside_container .header_card .container_info_designer .name {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.container .aside_container .header_card .container_info_designer .position {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.container_menu_responsive {
+  width: 90%;
+  padding: 10px;
+  display: none;
+  background-color: #181719;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 150px;
+}
+
+.container_menu_responsive  .container_close {
+  align-self: flex-end;
+  font-size: 50px;
+}
+
+.container_menu_responsive .container_nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.container_menu_responsive .container_nav .active {
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.container_menu_responsive .container_nav .active::after {
+  content: "";
+  display: block;
+  width: 10%;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
+
+@media screen and (max-width: 998px) {
+  .container .navbar .container_nav {
+    display: none;
+  }
+
+  .container .navbar .container_burger_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  
+  .container .main_container {
+    flex-wrap: wrap;
+  }
+
+  .container .main_container .info_container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .container .main_container .container_img {
+    width: 100%;
+  }
+
+  .container .aside_container p {
+    font-size: 18px;
+  }
+
+  .container .aside_container {
+    width: 80%;
+    position: absolute;
+    left: 50px;
+    bottom: -50px;
+    margin-top: 100px;
+  }
+}
+
+
+
